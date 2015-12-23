@@ -6,7 +6,8 @@ head: {
     admin: {
         analytics: {
             title: 'Аналитика',
-            useSocialMetaTags: false
+            useSocialMetaTags: false,
+            useBootstrap: true
         }
     }
 }
