@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if IE 7]><html class="ie7 lt-ie10 lt-ie9 lt-ie8 no-js" lang="ru"><![endif]-->
+<!--[if IE 8]><html class="ie8 lt-ie10 lt-ie9 no-js" lang="ru"><![endif]-->
+<!--[if IE 9 ]><html class="ie9 lt-ie10 no-js" lang="ru"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" lang="ru"><!--<![endif]-->
+
+<head>
+    {{> head/head head.admin.analytics}}
+</head>
+
+<body class="page">
+    <!-- begin breadcrumb -->
+    <ol class="breadcrumb pull-right">
+        <li><a href="#">Home</a></li>
+        <li class="active">Аналитика</li>
+    </ol>
+    <!-- end breadcrumb -->
+    <!-- begin page-header -->
+    <h1 class="page-header">Аналитика <small>Просмотр информации</small></h1>
+    <!-- end page-header -->
+    
+    <!-- begin alert -->
+    <div class="alert alert-info">
+        <span class="label label-inverse m-r-5">NOTE!</span> NVD3 Chart is not supported in old browser like IE8.
+    </div>
+    <!-- end alert -->
+    <!-- begin row -->
+    <div class="row">
+        <!-- begin col-md-6 -->
+        <div class="col-md-6 ui-sortable">
+            {{> panels/panel panels.hits}}
+        </div>
+        <!-- end col-md-6 -->
+        <!-- begin col-md-3 -->
+        <div class="col-md-3 ui-sortable">
+            {{> panels/panel panels.gender}}
+        </div>
+        <!-- end col-md-3 -->
+        <!-- begin col-md-3 -->
+        <div class="col-md-3 ui-sortable">
+            {{> panels/panel panels.age}}
+        </div>
+        <!-- end col-md-3 -->
+    </div>
+    <!-- end row -->
+    <!-- begin row 2 -->
+    <div class="row">
+        <!-- begin col-md-3 -->
+        <div class="col-md-3 ui-sortable">
+            {{> panels/panel panels.topUsers}}
+        </div>
+        <!-- end col-md-3 -->
+        <!-- begin col-md-3 -->
+        <div class="col-md-3 ui-sortable">
+            {{> panels/panel panels.load}}
+        </div>
+        <!-- end col-md-3 -->
+        <!-- begin col-md-6 -->
+        <div class="col-md-6 ui-sortable">
+            {{> panels/panel panels.users}}
+        </div>
+        <!-- end col-md-6 -->
+    </div>
+    <!-- end row 2 -->
+
+
+
+<!-- библиотеки подключаю удаленно -->
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src='//d3js.org/d3.v3.min.js' charset='utf-8'></script>
+<script src='//cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js' charset='utf-8'></script>
+
+<!-- Main scripts.     -->
+<script src="%=staticPrefix=%js/main%=hash=%%=min=%.js"></script>
+</body>

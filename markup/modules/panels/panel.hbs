@@ -1,0 +1,27 @@
+<!-- begin panel -->
+<div class="panel panel-inverse">
+    {{> panels/panel-header }}
+    <!-- begin panel-body -->
+    <div class="panel-body">
+        {{#is view '==' 'hits'}}
+            {{> panels/hits}}
+        {{/is}}
+        {{#is view '==' 'gender'}}
+            {{> panels/gender}}
+        {{/is}}
+        {{#is view '==' 'age'}}
+            {{> panels/age}}
+        {{/is}}
+        {{#is view '==' 'users'}}
+            {{> panels/users}}
+        {{/is}}
+        {{#is view '==' 'load'}}
+            {{> panels/load}}
+        {{/is}}
+        {{#is view '==' 'topUsers'}}
+            {{> panels/topusers}}
+        {{/is}}
+    </div>
+    <!-- end panel-body -->
+</div>
+<!-- end panel -->
