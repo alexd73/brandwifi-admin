@@ -1,8 +1,13 @@
-<div class="panel-heading">
-    <h4 class="panel-title">
-        {{title}}
-        {{#if headerSpan}}
-            <span class="pull-right label label-success">{{headerSpan}}</span>
-        {{/if}}
-    </h4>
-</div>
+{{#if title}}
+    <div class="panel-heading">
+        <h4 class="panel-title">
+            {{title}}
+            {{#if headerSpan}}
+                <span class="pull-right label label-success">{{headerSpan}}</span>
+            {{/if}}
+            {{#is view '==' 'BDays'}}
+                {{> panels/bdays-filter }}
+            {{/is}}
+        </h4>
+    </div>
+{{/if}}

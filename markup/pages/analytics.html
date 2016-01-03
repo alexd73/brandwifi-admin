@@ -46,28 +46,41 @@
     <!-- begin row 2 -->
     <div class="row">
         <!-- begin col-md-3 -->
-        <div class="col-md-3 ui-sortable">
+        <div class="col-md-6 ui-sortable">
             {{> panels/panel panels.topUsers}}
         </div>
         <!-- end col-md-3 -->
-        <!-- begin col-md-3 -->
-        <div class="col-md-3 ui-sortable">
-            {{> panels/panel panels.load}}
-        </div>
-        <!-- end col-md-3 -->
-        <!-- begin col-md-6 -->
+        <!-- begin Users -->
         <div class="col-md-6 ui-sortable">
             {{> panels/panel panels.users}}
         </div>
-        <!-- end col-md-6 -->
+        <!-- end Users -->
+        <!-- begin Load -->
+        <div class="col-md-6 ui-sortable">
+            {{> panels/panel panels.load}}
+        </div>
+        <!-- end Load -->
     </div>
     <!-- end row 2 -->
+    <!-- begin row 3 -->
+    <div class="row">
+        <!-- begin col-md-12 -->
+        <div class="col-md-12">
+            {{> panels/panel panels.BDays}}
+        </div>
+        <!-- end col-md-12 -->
+    </div>
+    <!-- end row 3 -->
 
 
 
 <!-- библиотеки подключаю удаленно -->
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="http://78.47.18.59:8080/brandwif/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="http://78.47.18.59:8080/brandwif/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+<script src="http://78.47.18.59:8080/brandwif/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
 <script src='//d3js.org/d3.v3.min.js' charset='utf-8'></script>
 <script src='//cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.js' charset='utf-8'></script>
 

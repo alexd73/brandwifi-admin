@@ -16,12 +16,16 @@ panels: {
         view: 'topUsers'
     },
     load: {
-        title: 'Загрузка',
         view: 'load'
     },
     users: {
         title: 'Последние авторизации',
         view: 'users',
         headerSpan: 'Сегодня 52 пользователя(-ей)'
+    },
+    BDays: {
+        title: 'Дни рождения',
+        view: 'BDays'
     }
+
 }
